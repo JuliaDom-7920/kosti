@@ -1,0 +1,137 @@
+html, body {
+	height: 100%;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: linear-gradient(0deg, #2196f3, #ffa689) fixed;
+}
+p {
+	font-size: 1rem;
+	//word-break: break-all;
+}
+button:focus,
+input:focus {
+	outline: none;
+}
+.container-game {
+	width: 100%;
+	height: 100%;
+	background: url(bg3.jpg) no-repeat center bottom;
+	background-size: 100%;
+}
+.cover {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.85);
+}
+div#top-bar {
+	position: absolute;
+	top: 1%;
+	left: 10%;
+	right: 3%;
+	display: none;
+	grid-template: 1fr / 15% 50% 15% 20%;
+}
+.player p {
+	width: 70%;
+}
+.score p {
+	width: 15%;
+}
+.rate p {
+	width: 80%;
+}
+.box {
+	margin: 10px auto;
+	padding: 7px;
+	text-align: center;
+	color: #fff;
+	background: rgb(192,192,192,0.25);
+	border: 1px solid black;
+	border-radius: 20px;
+	box-shadow: 0px 0px 14px rgb(105,126,185,0.5);
+}
+div#message-box {
+	position: absolute;
+	top: 20%;
+	left: 0;
+	right: 0;
+	display: none;
+	width: 30%;
+	height: auto;
+	min-height: 100px;
+	//display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+p#message {
+	display: none;
+}
+input#input-name {
+	display: none;
+	width: 70%;
+	margin: 0 auto;
+	padding: 7px 0;
+	color: #fff;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #fff;
+}
+span#error {
+	display: none;
+	margin: 5px 0 0 15%;
+	font-size: 14px;
+	text-align: left;
+	color: #c13636;
+}
+button#btn-start,
+button#btn-next,
+button#btn-throw,
+button#btn-restart {
+	position: absolute;
+	top: 40%;
+	left: 0;
+	right: 0;
+	display: block;
+	width: 15%;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: 600;
+	background: rgb(22,46,113,0.85);
+}
+button#btn-next,
+button#btn-throw,
+button#btn-restart {
+	display: none;
+}
+button#btn-start:hover,
+button#btn-next:hover,
+button#btn-throw:hover,
+button#btn-restart:hover {
+	background: rgb(192,192,192,0.25);
+}
+button#btn-start:active,
+button#btn-next:active
+button#btn-throw:active,
+button#btn-restart:active {
+	background: rgb(105,126,185,0.5);
+}
+div#game-area {
+	position: absolute;
+	bottom: 10%;
+	left: 0;
+	right: 0;
+	display: none;
+	width: 60%;
+	height: 300px;
+}
+div#dice {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+div#dice img {
+	margin: 0 10px;
+}

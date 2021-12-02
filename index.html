@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Гра "Кості"</title>
+	<link rel="shortcut icon" href="dice1.png" type="image/png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container-game">
+		<div class="cover">
+			<div id="top-bar">
+				<div class="player">
+					<p class="box"><span id="player-name">Гравець 1</span></p>
+				</div>
+				<div class="score">
+					<p class="box">
+						<span id="point-1">0</span>
+						 : 
+						<span id="point-2">0</span>
+					</p>
+				</div>
+				<div class="player">
+					<p class="box">Бот</p>
+				</div>
+				<div class="rate">
+					<p class="box">Ставка <span id="rate">0</span> грн</p>
+				</div>
+			</div>
+			<div id="message-box" class="box">
+				<p id="message" class="m-0">Повідомлення</p>
+				<input type="text" id="input-name" name="name" placeholder="Введіть ім’я">
+				<span id="error">Надто коротке ім’я!</span>
+			</div>
+			<button id="btn-start" class="box" onclick="start_game();">Почати гру</button>
+			<button id="btn-next" class="box" onclick="next_game();">Продовжити</button>
+			<button id="btn-throw" class="box" onclick="throw_dice();">Зробити кидок</button>
+			<button id="btn-restart" class="box" onclick="restart_game();">Спробувати ще</button>
+			<div id="game-area" class="box">
+				<div id="dice">
+						<img id="dice-1" src="dice1.png" width="70">
+						<img id="dice-2" src="dice2.png" width="70">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
